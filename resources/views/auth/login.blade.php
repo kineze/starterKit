@@ -5,7 +5,7 @@
 
 <div class="w-full h-screen flex flex-col items-center justify-center">
 
-    <div class="lg:w-4/12 dark:border-neutral-700 dark:border rounded-lg mx-auto shadow-xl dark:shadow-none p-6 shadow-gray-300 dark:shadow-neutral-800  rounded-4">
+    <div class="lg:w-4/12 md:w-7/12 dark:border-neutral-700 dark:border w-full rounded-lg md:shadow-xl dark:shadow-none p-6 shadow-gray-300 dark:shadow-neutral-800  rounded-4">
 
         <div class="w-full flex p-6 items-center justify-center">
             <a href="{{url('/')}}">
