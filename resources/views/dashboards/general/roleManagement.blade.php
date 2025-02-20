@@ -34,7 +34,7 @@
                         <div class="flex flex-wrap -mx-3">
                             <div class="w-full max-w-full px-3 mt-4 flex-0 sm:w-10/12 sm:mt-0">
                                 <label class="mt-6 mb-2 ml-1 font-bold text-xs text-slate-800" for="roleName">Role Name</label>
-                                <input type="text" name="roleName" placeholder="Role name here"  class="{{ $errors->has('roleName') ? 'border-red-500' : 'border-gray-300' }} focus:shadow-soft-primary-outline da text-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 outline-none transition-all placeholder:text-gray-500 focus:border-black focus:outline-none" value="{{ old('email') }}"/>
+                                <input type="text" name="roleName" placeholder="Role name here"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" value="{{ old('email') }}"/>
                                 @error('roleName')
                                     <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
                                 @enderror

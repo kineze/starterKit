@@ -67,7 +67,7 @@
   </style>
   
 
-<div class="w-full mt-5 font-poppins scroll-smooth transition duration-300">
+<div class="w-full mt-5 max-h-screen font-poppins scroll-smooth transition duration-300">
     <div class="flex flex-wrap mb-12 -mx-3">
         <div class="w-full max-w-full px-3 mt-2 lg:flex-0 shrink-0 lg:w-3/12">
             <div class="sticky flex flex-col min-w-0 break-words bg-white border-0 top-1/100 drop-shadow-lg rounded-2xl bg-clip-border">
@@ -150,8 +150,8 @@
                 </div>
             </div>
             
-            <div class=" overflow-y-scroll h-[720px] -mt-3 hide-scrollbar w-full p-2">
-                <div class="relative flex flex-col min-w-0 mt-6 break-words bg-white drop-shadow-lg rounded-2xl bg-clip-border" id="profile">
+            <div class=" overflow-y-scroll h-[700px] hide-scrollbar w-full p-2">
+                <div class="relative flex flex-col min-w-0 mt-2 break-words bg-white drop-shadow-lg rounded-2xl bg-clip-border" id="profile">
                     <div class="flex-auto pt-0">
                         @if (Laravel\Fortify\Features::canUpdateProfileInformation())
                             @livewire('profile.update-profile-information-form')
@@ -190,9 +190,13 @@
 
                 <div class="relative flex flex-col min-w-0 mt-6 break-words bg-white border-0 drop-shadow-lg rounded-2xl bg-clip-border" id="accountdelete">
                     <div class="p-6">
-                        <div class="mt-10 sm:mt-0">
-                            @livewire('profile.logout-other-browser-sessions-form')
-                        </div>
+                        @if (Laravel\Jetstream\Jetstream::hasAccountDeletionFeatures())
+
+                            <div class="mt-10 sm:mt-0">
+                                @livewire('profile.delete-user-form')
+                            </div>
+
+                        @endif
                     </div>
                 </div>
             </div>
