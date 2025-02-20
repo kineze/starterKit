@@ -8,8 +8,8 @@
                       <span class="sr-only">Toggle sidebar</span>
                   </button>
   
-                <a href="https://flowbite.com" class="flex mr-4 lg:ml-12">
-                  <img src="{{asset('assets/img/visosys-dark-logo.webp')}}" class="mr-3 h-7" alt="FlowBite Logo" />
+                <a href="" class="flex mr-4 lg:ml-12">
+                  <img src="{{asset('assets/img/visosys-dark-logo.webp')}}" class="mr-3 h-8" alt="FlowBite Logo" />
                   {{-- <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">Flowbite</span> --}}
                 </a>
                 <form action="#" method="GET" class="hidden lg:block lg:pl-2">
