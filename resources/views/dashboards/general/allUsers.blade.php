@@ -27,7 +27,7 @@
                     All Users
                 </div>
                 <div>
-                    <a href="{{route('newUser')}}" class="whitespace-nowrap inline-block px-8 py-2 font-bold text-center uppercase align-middle transition-all bg-gray-800 dark:bg-white rounded-lg shadow-none cursor-pointer active:opacity-85 leading-pro text-xs ease-soft-in tracking-tight-soft bg-150 bg-x-25 hover:scale-102 active:shadow-soft-xs border border-none text-black dark:text-black"><i class="fas fa-plus mr-2"></i> New User</a>
+                    <a href="{{route('newUser')}}" class="whitespace-nowrap inline-block px-8 py-2 font-bold text-center uppercase align-middle transition-all bg-gray-800 dark:bg-white rounded-lg shadow-none cursor-pointer active:opacity-85 leading-pro text-xs ease-soft-in tracking-tight-soft bg-150 bg-x-25 hover:scale-102 active:shadow-soft-xs border border-none text-white dark:text-black"><i class="fas fa-plus mr-2"></i> New User</a>
                 </div>
             </div>
             <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
@@ -70,7 +70,7 @@
                         <td class="px-6 py-4">
                             <div class="flex flex-wrap gap-4">
                                 @foreach($user->roles as $role)
-                                    @if($role->name === 'Admin')
+                                    @if($role->name === 'SuperAdmin')
                                         <span class="py-1 px-4 text-sm rounded-lg inline-block whitespace-nowrap text-center bg-lime-500 font-semibold">{{ $role->name }}</span>
                                     @else
                                         <span class="py-1 px-4 text-sm rounded-lg inline-block whitespace-nowrap text-center bg-rose-500 font-semibold">{{ $role->name }}</span>

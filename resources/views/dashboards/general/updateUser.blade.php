@@ -99,7 +99,7 @@
                                 <div class="flex flex-wrap -mx-3">
                                     <div class="w-full max-w-full px-3 flex-0 mt-1">
                                         <label class="mt-6 mb-2 ml-1 font-bold text-sm text-gray-800" for="UserName">User Name</label>
-                                        <input type="text" name="UserName" value="{{$user->name}}" placeholder="username" class="{{ $errors->has('UserName') ? 'border-red-500' : 'border-gray-300' }}  focus:shadow-soft-primary-outline text-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 outline-none transition-all placeholder:text-gray-500 focus:border-black focus:outline-none"/>
+                                        <input type="text" name="UserName" value="{{$user->name}}" placeholder="username" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
                                         @error('UserName')
                                             <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
                                         @enderror
@@ -110,14 +110,14 @@
                                 <div class="flex flex-wrap mt-3 -mx-3">
                                     <div class="w-full max-w-full px-3 mt-4 flex-0 sm:w-6/12 sm:mt-0">
                                         <label class="mt-6 mb-2 ml-1 font-bold text-xs text-slate-800" for="email">Email</label>
-                                        <input type="email" name="email" value="{{$user->email}}" placeholder="example@org.com"  class="{{ $errors->has('email') ? 'border-red-500' : 'border-gray-300' }} focus:shadow-soft-primary-outline text-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 outline-none transition-all placeholder:text-gray-500 focus:border-black focus:outline-none"/>
+                                        <input type="email" name="email" value="{{$user->email}}" placeholder="example@org.com"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
                                         @error('email')
                                             <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
                                         @enderror
                                     </div>
                                     <div class="w-full max-w-full px-3 flex-0 sm:w-6/12">
                                         <label class="mt-6 mb-2 ml-1 font-bold text-xs text-slate-800" for="phone">Phone</label>
-                                        <input type="text" name="phone" value="{{$user->phone}}" placeholder="XXXXXXXXXX" class="{{ $errors->has('phone') ? 'border-red-500' : 'border-gray-300' }} focus:shadow-soft-primary-outline text-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 outline-none transition-all placeholder:text-gray-500 focus:border-black focus:outline-none" />
+                                        <input type="text" name="phone" value="{{$user->phone}}" placeholder="XXXXXXXXXX" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
                                         @error('phone')
                                             <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
                                         @enderror
@@ -167,14 +167,14 @@
                         <div class="flex flex-wrap -mx-3">
                             <div class=" w-full max-w-full px-3 mt-4 flex-0 sm:mt-0">
                                 <label class=" mt-6 inline-block mb-2 ml-1 font-semibold text-sm text-slate-700" for="password">password</label>
-                                <input type="password" name="password" placeholder="password" class="{{ $errors->has('password') ? 'border-red-500' : 'border-gray-300' }} focus:shadow-soft-primary-outline text-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-800 outline-none transition-all placeholder:text-gray-500 focus:border-black focus:outline-none" />
+                                <input type="password" name="password" placeholder="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
                                 @error('password')
                                     <p class="text-red-500 text-xs mt-1">{{ $message }}</p>
                                 @enderror
                             </div>
                             <div class="w-full max-w-full px-3 flex-0">
                                 <label class=" mt-6 inline-block mb-2 ml-1 font-semibold text-sm text-slate-700" for="ConfirmPassword">Confirm password</label>
-                                <input type="password" name="password_confirmation" placeholder="Confirm password" class="{{ $errors->has('password_confirmation') ? 'border-red-500' : 'border-gray-300' }} focus:shadow-soft-primary-outline text-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-800 outline-none transition-all placeholder:text-gray-500 focus:border-black focus:outline-none" />
+                                <input type="password" name="password_confirmation" placeholder="Confirm password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
                             </div>
                         </div>
                     
